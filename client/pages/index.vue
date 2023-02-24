@@ -18,7 +18,7 @@
 						 </div>
           </div>
 
-              <pagination/>
+            
 
         </div>
     </div>
@@ -27,12 +27,11 @@
 
 <script>
 import featureProductVue from '../components/featureProduct'
-import pagination from '../components/pagination'
+
 
 export default {
   components: {
-    featureProductVue,
-    pagination
+    featureProductVue
   },
   async asyncData({$axios}) {
     const productResponse = await $axios.$get("http://localhost:3000/api/products")
